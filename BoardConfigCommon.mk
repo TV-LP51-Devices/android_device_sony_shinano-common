@@ -128,7 +128,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/sony/shinano-common
 
-##MultiROM config. MultiROM also uses parts of TWRP config
+# MultiROM config. MultiROM also uses parts of TWRP config
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/sony/shinano-common/multirom/init_devices.c
 MR_USE_QCOM_OVERLAY := true
@@ -138,3 +138,12 @@ MR_FSTAB := device/sony/shinano-common/multirom/twrp.fstab
 MR_USE_MROM_FSTAB := true
 MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 MR_PIXEL_FORMAT := "RGBX_8888"
+
+# F2FS filesystem
+TARGET_USERIMAGES_USE_F2FS := true
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    f2fstat
+
