@@ -1,5 +1,4 @@
 # Audio
-lib/hw/audio.primary.msm8974.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
@@ -7,10 +6,6 @@ vendor/lib/libaudcal.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
-
-# Audio BLOBS
-vendor/etc/effect_init_params
-vendor/lib/liblistenhardware.so
 
 # ADSP
 vendor/lib/libadsprpc.so
@@ -195,10 +190,6 @@ vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-
-# FM
-bin/fmconfig
-bin/fm_qsoc_patches
 
 # GPS
 -app/com.qualcomm.location.apk:priv-app/com.qualcomm.location/com.qualcomm.location.apk
